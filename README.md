@@ -1,16 +1,22 @@
-### create a migration file 
+### Useful Commands
 ---
-```
-bash
 
-npx dbmate create <file_name>
+#### Create a new migration file
+```bash
+npx dbmate new <migration_name>
 ```
 
-# tables list
----
-- users
-- user_session
-- contacts
-- user_contacts
-- contact_groups
-- group
+#### Apply pending migrations (creates DB if missing)
+```bash
+npx dbmate up
+```
+
+#### Rollback the most recent migration
+```bash
+npx dbmate rollback
+```
+
+#### Check migration status
+```bash
+npx dbmate status
+```
